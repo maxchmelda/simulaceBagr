@@ -1,0 +1,15 @@
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\bin\Debug\net8.0\SimulationProject.exe
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\bin\Debug\net8.0\SimulationProject.deps.json
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\bin\Debug\net8.0\SimulationProject.runtimeconfig.json
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\bin\Debug\net8.0\SimulationProject.dll
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\bin\Debug\net8.0\SimulationProject.pdb
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.AssemblyInfoInputs.cache
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.AssemblyInfo.cs
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.csproj.CoreCompileInputs.cache
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.sourcelink.json
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.dll
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\refint\SimulationProject.dll
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.pdb
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\SimulationProject.genruntimeconfig.cache
+C:\Users\Max\Coding\CS\Simulace\SimulationProject\obj\Debug\net8.0\ref\SimulationProject.dll
