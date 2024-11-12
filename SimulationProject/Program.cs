@@ -86,13 +86,14 @@ namespace SimulationProject
 
                     int posledniCasNalozeni = 0;
 
-                    foreach(var akceVkal in akceVKalendari)
+                    foreach (var akceVKal in akceVKalendari)
                     {
-                        if (akceVKal.zacatek + Auta[akceVkal.autoId].dobaNakládání > posledniCasNalozeni)
+                        if (akceVKal.zacatek + Auta[akceVKal.autoId].dobaNakládání > posledniCasNalozeni)
                         {
-                            posledniCasNalozeni = akceVKal.zacatek + Auta[akceVkal.autoId].dobaNakládání;
+                            posledniCasNalozeni = akceVKal.zacatek + Auta[akceVKal.autoId].dobaNakládání;
                         }
                     }
+
 
                     int pisekKodebrani = aktuálníAuto.nosnost;
 
@@ -125,7 +126,7 @@ namespace SimulationProject
 
             }
 
-            Console.WriteLine("Finalni cas je", finalniCas);
+            Console.WriteLine($"Finalni cas je {finalniCas}");
         }
     }
 }
