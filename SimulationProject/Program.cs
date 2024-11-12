@@ -42,6 +42,7 @@ namespace SimulationProject
             List<Auto> Auta = new List<Auto>();
             PriorityQueue<Akce, int> Kalendář = new PriorityQueue<Akce, int>();
 
+            // Vstup hodnot
             Console.WriteLine("Kolik chceš písku?");
             int písek = Convert.ToInt32(Console.ReadLine());
 
@@ -60,11 +61,14 @@ namespace SimulationProject
 
             int finalniCas = 0;
 
+            // Dokud pisek neni prevezen tak delej
             while (písek > 0)
             {
+                // Vem auto s nejblizsi akci z kalendare
                 Akce aktualniAkce = Kalendář.Dequeue();
                 Auto aktualniAuto = Auta[aktualniAkce.autoId];
 
+                // pokud jeho akce je naloz tak ho posli vylozit, tzn pridej jeho akci vylozeni s zacatecnim casem: zacatek nalozeni + doba nalozeni + doba cesty 
                 if (aktualniAkce.typ == Akce.Typ.nalož)
                 {
                     int novyZacatek = aktualniAkce.zacatek + aktualniAuto.dobaNakládání + aktualniAuto.dobaCesty;
@@ -72,20 +76,25 @@ namespace SimulationProject
                 }
                 else
                 {
+                    // pokud jeho akce je vyloz tak ho posli nalozit
                     int novyZacatek = aktualniAkce.zacatek + aktualniAuto.dobaVykládání + aktualniAuto.dobaCesty;
                     int pisekKodobrani = Math.Min(aktualniAuto.nosnost, písek);
 
+                    // odeber pisek
                     písek -= pisekKodobrani;
 
+                    // pokud uz neni pisek tak finalni cas je cas kdy zacne nakladat znova
                     if (písek <= 0)
                     {
                         finalniCas = novyZacatek;
                         break;
                     }
 
+                    // vem vsechny uz naplanovane dalsi akce v kalendari
                     List<Akce> akceVKalendari = new List<Akce>(Kalendář.UnorderedItems.Select(a => a.Element));
                     int posledniCasNalozeni = 0;
 
+                    //pokud je nejaka akce v kalendari naloz tzn auta uz jsou ve fronte na naklad tak cas zacatku noveho nalozeni tohodle auta je cas posledniho vylozeni auta uz v kalendari
                     foreach (var akceVKal in akceVKalendari)
                     {
                         if (akceVKal.typ == Akce.Typ.nalož)
@@ -98,6 +107,7 @@ namespace SimulationProject
                         }
                     }
 
+                    // tady to zjisti jestli teda nejaky auto uz v kalendari nevyklada v tu dobu kdy prijede aktualni auto, pokud ne tak to prida nalozeni hned po prijezdu pokud jo tak to prida nalozeni az po nalozeni posledniho uz naplanovaneho auta
                     if (posledniCasNalozeni < novyZacatek)
                     {
                         Kalendář.Enqueue(new Akce(aktualniAkce.autoId, Akce.Typ.nalož, novyZacatek), novyZacatek);
