@@ -61,6 +61,7 @@ namespace SimulationProject
                 startTime = Auta[i - 1].dobaNakládání;
             }
 
+            int finalniCas = 0;
 
             while (písek > 0)
             {
@@ -76,10 +77,55 @@ namespace SimulationProject
                 {
                     int novýZačátek = aktualníAkce.zacatek + aktuálníAuto.dobaVykládání + aktuálníAuto.dobaCesty;
 
+                    List<Akce> akceVKalendari = new List<Akce>();
 
+                    foreach (var akce in Kalendář.UnorderedItems)
+                    {
+                        akceVKalendari.Add(akce.Element);
+                    }
+
+                    int posledniCasNalozeni = 0;
+
+                    foreach(var akceVkal in akceVKalendari)
+                    {
+                        if (akceVKal.zacatek + Auta[akceVkal.autoId].dobaNakládání > posledniCasNalozeni)
+                        {
+                            posledniCasNalozeni = akceVKal.zacatek + Auta[akceVkal.autoId].dobaNakládání;
+                        }
+                    }
+
+                    int pisekKodebrani = aktuálníAuto.nosnost;
+
+                    if (posledniCasNalozeni < novýZačátek) {
+                        Kalendář.Enqueue(new Akce(aktualníAkce.autoId, Akce.Typ.nalož, novýZačátek), novýZačátek);
+                        if (písek - pisekKodebrani <= 0)
+                        {
+                            finalniCas = novýZačátek + aktuálníAuto.dobaNakládání;
+                            break;
+                        }
+                        else
+                        {
+                            písek -= pisekKodebrani;
+                        }
+                    } else
+                    {
+                        if (písek - pisekKodebrani <= 0)
+                        {
+                            finalniCas = novýZačátek + posledniCasNalozeni;
+                            break;
+                        }
+                        else
+                        {
+                            písek -= pisekKodebrani;
+                        }
+                        Kalendář.Enqueue(new Akce(aktualníAkce.autoId, Akce.Typ.nalož, posledniCasNalozeni), posledniCasNalozeni);
+                    }
+                    
                 }
 
             }
+
+            Console.WriteLine("Finalni cas je", finalniCas);
         }
     }
 }
