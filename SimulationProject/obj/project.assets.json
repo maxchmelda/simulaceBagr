@@ -1,42 +1,38 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v8.0": {},
-    ".NETFramework,Version=v8.0/win7-x86": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v8.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\muller\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Martin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "O:\\8.M\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj",
+      "projectUniqueName": "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj",
       "projectName": "SimulationProject",
-      "projectPath": "O:\\8.M\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj",
-      "packagesPath": "C:\\Users\\muller\\.nuget\\packages\\",
-      "outputPath": "O:\\8.M\\ProG\\simulaceBagr\\SimulationProject\\obj\\",
+      "projectPath": "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj",
+      "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\muller\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net80"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net80": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -44,14 +40,33 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net80": {}
-    },
-    "runtimes": {
-      "win7-x86": {
-        "#import": []
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

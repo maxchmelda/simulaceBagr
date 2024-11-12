@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Max\\Coding\\CS\\Simulace\\SimulationProject\\SimulationProject.csproj": {}
+    "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Max\\Coding\\CS\\Simulace\\SimulationProject\\SimulationProject.csproj": {
+    "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Max\\Coding\\CS\\Simulace\\SimulationProject\\SimulationProject.csproj",
+        "projectUniqueName": "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj",
         "projectName": "SimulationProject",
-        "projectPath": "C:\\Users\\Max\\Coding\\CS\\Simulace\\SimulationProject\\SimulationProject.csproj",
-        "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Max\\Coding\\CS\\Simulace\\SimulationProject\\obj\\",
+        "projectPath": "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\SimulationProject.csproj",
+        "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Martin\\Documents\\Škola\\ProG\\simulaceBagr\\SimulationProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Martin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

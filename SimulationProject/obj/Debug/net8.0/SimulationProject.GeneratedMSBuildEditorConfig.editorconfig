@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SimulationProject
-build_property.ProjectDir = C:\Users\Max\Coding\CS\Simulace\SimulationProject\
+build_property.ProjectDir = C:\Users\Martin\Documents\Škola\ProG\simulaceBagr\SimulationProject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
